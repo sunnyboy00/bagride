@@ -9,7 +9,7 @@ target_link_libraries (${BR_NET_SAMPLE} br_net_uv )
 target_link_libraries (${BR_NET_SAMPLE} ${HTTPARSER_A} )
 target_link_libraries (${BR_NET_SAMPLE} br_trace )
 target_link_libraries (${BR_NET_SAMPLE} ${UV_A} )
-target_link_libraries (${BR_NET_SAMPLE} -lpthread )
+target_link_libraries (${BR_NET_SAMPLE} -lpthread -lrt)
 
 
 #add_subdirectory(boostrap)

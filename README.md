@@ -10,10 +10,10 @@ br_net_sample.c
 http-parser, libuv
 
 # http-parser
-cd bagride/external_libs/libhttp-parser && ./buildit
+cd external_libs/libhttp-parser && ./buildit
 
 # libuv
-cd bagride/external_libs/libuv && ./autogen.sh && ./configure && make
+cd external_libs/libuv && ./autogen.sh && ./configure && make
 
 # libbagride
-cd bagride && ./configure && make
+./configure && make

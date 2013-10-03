@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/tmp/uuuuu/bagride/external_libs/libhttp-parser/http_parser.c
+/tmp/bagride/external_libs/libhttp-parser/http_parser.c
 http_parser.h
-/tmp/uuuuu/bagride/external_libs/libhttp-parser/http_parser.h
+/tmp/bagride/external_libs/libhttp-parser/http_parser.h
 assert.h
 -
 stddef.h
@@ -22,7 +22,7 @@ string.h
 limits.h
 -
 
-/tmp/uuuuu/bagride/external_libs/libhttp-parser/http_parser.h
+/tmp/bagride/external_libs/libhttp-parser/http_parser.h
 sys/types.h
 -
 BaseTsd.h
@@ -32,9 +32,9 @@ stddef.h
 stdint.h
 -
 
-/tmp/uuuuu/bagride/external_libs/libhttp-parser/test.c
+/tmp/bagride/external_libs/libhttp-parser/test.c
 http_parser.h
-/tmp/uuuuu/bagride/external_libs/libhttp-parser/http_parser.h
+/tmp/bagride/external_libs/libhttp-parser/http_parser.h
 stdlib.h
 -
 assert.h
