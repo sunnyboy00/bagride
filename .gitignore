@@ -1,0 +1,15 @@
+/bin/
+http-parser.dir
+CMakeCache.txt
+*.log
+CMakeFiles
+*~
+cmake_install.cmake
+gmon.out
+*.a
+*.o
+*.Plo
+*.lo
+*.la
+nbproject
+/build/

@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jam/Dropbox/dev/bagride/external_libs/http-parser
+CMAKE_SOURCE_DIR = /tmp/uuuuu/bagride/external_libs/libhttp-parser
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jam/Dropbox/dev/bagride/external_libs/http-parser
+CMAKE_BINARY_DIR = /tmp/uuuuu/bagride/external_libs/libhttp-parser
 
 # Include any dependencies generated for this target.
 include CMakeFiles/http-parser.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/http-parser.dir/flags.make
 
 CMakeFiles/http-parser.dir/http_parser.c.o: CMakeFiles/http-parser.dir/flags.make
 CMakeFiles/http-parser.dir/http_parser.c.o: http_parser.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jam/Dropbox/dev/bagride/external_libs/http-parser/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/uuuuu/bagride/external_libs/libhttp-parser/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/http-parser.dir/http_parser.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/http-parser.dir/http_parser.c.o   -c /home/jam/Dropbox/dev/bagride/external_libs/http-parser/http_parser.c
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/http-parser.dir/http_parser.c.o   -c /tmp/uuuuu/bagride/external_libs/libhttp-parser/http_parser.c
 
 CMakeFiles/http-parser.dir/http_parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http-parser.dir/http_parser.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/jam/Dropbox/dev/bagride/external_libs/http-parser/http_parser.c > CMakeFiles/http-parser.dir/http_parser.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /tmp/uuuuu/bagride/external_libs/libhttp-parser/http_parser.c > CMakeFiles/http-parser.dir/http_parser.c.i
 
 CMakeFiles/http-parser.dir/http_parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http-parser.dir/http_parser.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/jam/Dropbox/dev/bagride/external_libs/http-parser/http_parser.c -o CMakeFiles/http-parser.dir/http_parser.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /tmp/uuuuu/bagride/external_libs/libhttp-parser/http_parser.c -o CMakeFiles/http-parser.dir/http_parser.c.s
 
 CMakeFiles/http-parser.dir/http_parser.c.o.requires:
 .PHONY : CMakeFiles/http-parser.dir/http_parser.c.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/http-parser.dir/http_parser.c.o.provides.build: CMakeFiles/http-parse
 
 CMakeFiles/http-parser.dir/test.c.o: CMakeFiles/http-parser.dir/flags.make
 CMakeFiles/http-parser.dir/test.c.o: test.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jam/Dropbox/dev/bagride/external_libs/http-parser/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /tmp/uuuuu/bagride/external_libs/libhttp-parser/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/http-parser.dir/test.c.o"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/http-parser.dir/test.c.o   -c /home/jam/Dropbox/dev/bagride/external_libs/http-parser/test.c
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/http-parser.dir/test.c.o   -c /tmp/uuuuu/bagride/external_libs/libhttp-parser/test.c
 
 CMakeFiles/http-parser.dir/test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/http-parser.dir/test.c.i"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/jam/Dropbox/dev/bagride/external_libs/http-parser/test.c > CMakeFiles/http-parser.dir/test.c.i
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /tmp/uuuuu/bagride/external_libs/libhttp-parser/test.c > CMakeFiles/http-parser.dir/test.c.i
 
 CMakeFiles/http-parser.dir/test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/http-parser.dir/test.c.s"
-	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/jam/Dropbox/dev/bagride/external_libs/http-parser/test.c -o CMakeFiles/http-parser.dir/test.c.s
+	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /tmp/uuuuu/bagride/external_libs/libhttp-parser/test.c -o CMakeFiles/http-parser.dir/test.c.s
 
 CMakeFiles/http-parser.dir/test.c.o.requires:
 .PHONY : CMakeFiles/http-parser.dir/test.c.o.requires
@@ -124,6 +124,6 @@ CMakeFiles/http-parser.dir/clean:
 .PHONY : CMakeFiles/http-parser.dir/clean
 
 CMakeFiles/http-parser.dir/depend:
-	cd /home/jam/Dropbox/dev/bagride/external_libs/http-parser && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jam/Dropbox/dev/bagride/external_libs/http-parser /home/jam/Dropbox/dev/bagride/external_libs/http-parser /home/jam/Dropbox/dev/bagride/external_libs/http-parser /home/jam/Dropbox/dev/bagride/external_libs/http-parser /home/jam/Dropbox/dev/bagride/external_libs/http-parser/CMakeFiles/http-parser.dir/DependInfo.cmake --color=$(COLOR)
+	cd /tmp/uuuuu/bagride/external_libs/libhttp-parser && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/uuuuu/bagride/external_libs/libhttp-parser /tmp/uuuuu/bagride/external_libs/libhttp-parser /tmp/uuuuu/bagride/external_libs/libhttp-parser /tmp/uuuuu/bagride/external_libs/libhttp-parser /tmp/uuuuu/bagride/external_libs/libhttp-parser/CMakeFiles/http-parser.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/http-parser.dir/depend
 

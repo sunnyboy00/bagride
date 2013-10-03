@@ -4,8 +4,8 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/home/jam/Dropbox/dev/bagride/external_libs/http-parser/http_parser.c" "/home/jam/Dropbox/dev/bagride/external_libs/http-parser/CMakeFiles/http-parser.dir/http_parser.c.o"
-  "/home/jam/Dropbox/dev/bagride/external_libs/http-parser/test.c" "/home/jam/Dropbox/dev/bagride/external_libs/http-parser/CMakeFiles/http-parser.dir/test.c.o"
+  "/tmp/uuuuu/bagride/external_libs/libhttp-parser/http_parser.c" "/tmp/uuuuu/bagride/external_libs/libhttp-parser/CMakeFiles/http-parser.dir/http_parser.c.o"
+  "/tmp/uuuuu/bagride/external_libs/libhttp-parser/test.c" "/tmp/uuuuu/bagride/external_libs/libhttp-parser/CMakeFiles/http-parser.dir/test.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 

@@ -1,1 +1,1 @@
-/home/jam/Dropbox/dev/bagride/external_libs/http-parser/CMakeFiles/http-parser.dir
+/tmp/uuuuu/bagride/external_libs/libhttp-parser/CMakeFiles/http-parser.dir
