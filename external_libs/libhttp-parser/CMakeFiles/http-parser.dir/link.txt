@@ -1,0 +1,2 @@
+/usr/bin/ar cr libhttp-parser.a  CMakeFiles/http-parser.dir/http_parser.c.o CMakeFiles/http-parser.dir/test.c.o
+/usr/bin/ranlib libhttp-parser.a
