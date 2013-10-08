@@ -155,7 +155,7 @@ m4trace:configure.ac:16: -1- m4_pattern_allow([^target_alias$])
 m4trace:configure.ac:18: -1- m4_include([m4/libuv-extra-automake-flags.m4])
 m4trace:configure.ac:19: -1- AM_INIT_AUTOMAKE([-Wall -Werror foreign subdir-objects ])
 m4trace:configure.ac:19: -1- m4_pattern_allow([^AM_[A-Z]+FLAGS$])
-m4trace:configure.ac:19: -1- AM_AUTOMAKE_VERSION([1.11.6])
+m4trace:configure.ac:19: -1- AM_AUTOMAKE_VERSION([1.11.3])
 m4trace:configure.ac:19: -1- AC_REQUIRE_AUX_FILE([install-sh])
 m4trace:configure.ac:19: -1- AC_SUBST([INSTALL_PROGRAM])
 m4trace:configure.ac:19: -1- AC_SUBST_TRACE([INSTALL_PROGRAM])
@@ -542,10 +542,6 @@ m4trace:configure.ac:39: -1- AC_DEFINE_TRACE_LITERAL([_LARGE_FILES])
 m4trace:configure.ac:39: -1- m4_pattern_allow([^_LARGE_FILES$])
 m4trace:configure.ac:39: -1- AH_OUTPUT([_LARGE_FILES], [/* Define for large files, on AIX-style hosts. */
 @%:@undef _LARGE_FILES])
-m4trace:configure.ac:39: -1- AH_OUTPUT([_DARWIN_USE_64_BIT_INODE], [/* Enable large inode numbers on Mac OS X 10.5.  */
-#ifndef _DARWIN_USE_64_BIT_INODE
-# define _DARWIN_USE_64_BIT_INODE 1
-#endif])
 m4trace:configure.ac:40: -1- AM_CONDITIONAL([AIX], [AS_CASE([$host_os], [aix*],     [true], [false])])
 m4trace:configure.ac:40: -1- AC_SUBST([AIX_TRUE])
 m4trace:configure.ac:40: -1- AC_SUBST_TRACE([AIX_TRUE])

@@ -1,4 +1,4 @@
-# Install script for directory: /tmp/bagride/external_libs/libhttp-parser
+# Install script for directory: /home/sismaris/manuel-m/bagride/external_libs/libhttp-parser
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/tmp/bagride/external_libs/libhttp-parser/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/sismaris/manuel-m/bagride/external_libs/libhttp-parser/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/tmp/bagride/external_libs/libhttp-parser/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/sismaris/manuel-m/bagride/external_libs/libhttp-parser/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)
