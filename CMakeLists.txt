@@ -43,7 +43,7 @@ include_directories (${PROJECT_SOURCE_DIR}/internal_libs/trace )
 include_directories (${PROJECT_SOURCE_DIR}/internal_libs/net/include )
 
 add_subdirectory (internal_libs)
-add_subdirectory (components)
+
 
 
 

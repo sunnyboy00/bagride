@@ -4,7 +4,6 @@ CMAKE_W_ROOT=/tmp/cmake_w
 RELEASE_DIR=Release
 DEBUG_DIR=Debug
 
-
 # ----------------------------------------------------------------------- #
 #                                                                         #
 # ----------------------------------------------------------------------- #
@@ -12,7 +11,6 @@ f_date()
 {
   date '+%y%m%d_%H%M'
 }
-
 # ----------------------------------------------------------------------- #
 #                                                                         #
 # ----------------------------------------------------------------------- #
@@ -22,11 +20,8 @@ f_cmake_arbo()
    then
       rm -rf ${CMAKE_W_ROOT}
    fi
-   
    mkdir -p ${CMAKE_W_ROOT}/${RELEASE_DIR} ${CMAKE_W_ROOT}/${DEBUG_DIR}
-
 }
-
 # ----------------------------------------------------------------------- #
 #                                                                         #
 # ----------------------------------------------------------------------- #
@@ -38,7 +33,6 @@ f_cmake_configure()
   cd ${CMAKE_W_ROOT}/${DEBUG_DIR}
   cmake  -DCMAKE_BUILD_TYPE=Debug ${PROJECT_DIR}
 }
-
 # ----------------------------------------------------------------------- #
 #                                                                         #
 # ----------------------------------------------------------------------- #
@@ -75,24 +69,14 @@ check:
 archive:
 	git archive HEAD --prefix=$(PROJECT_NAME)_$(GENDATE)/ --format=tar.gz -o /tmp/$(PROJECT_NAME)_$(GENDATE).tar.gz
 	
-	
+.PHONY: external_libs
+external_libs:
+	cd external_libs/libhttp-parser && ./buildit
+	cd external_libs/libuv && ./buildit
 EOF
 
 }
 
-
-# 
-# #release
-# cd ${RELEASE_DIR}
-# make
-# 
-# 
-# #debug
-# cd ${DEBUG_DIR}
-# cmake  -DCMAKE_BUILD_TYPE=Debug ${PROJECT_DIR}
-# make
-# 
-# cd ${PROJECT_DIR}
 
 PROJECT_DIR=$(pwd)
 
