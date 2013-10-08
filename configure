@@ -41,7 +41,7 @@ f_top_makefile()
   GMAKEFILE=${PROJECT_DIR}/Makefile
 
   echo "GENDATE=$(f_date)" > ${GMAKEFILE}
-  echo "PROJECT_NAME=rd" >> ${GMAKEFILE}
+  echo "PROJECT_NAME=bagride" >> ${GMAKEFILE}
   echo "DEBUG_DIR=${CMAKE_W_ROOT}/${DEBUG_DIR}" >> ${GMAKEFILE}
   echo "RELEASE_DIR=${CMAKE_W_ROOT}/${RELEASE_DIR}" >> ${GMAKEFILE}
     
