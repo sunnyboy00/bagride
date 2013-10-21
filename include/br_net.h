@@ -83,6 +83,7 @@ void br_http_register(br_http_server_t* servers_, int size_);
  * common
  */
 void br_run(void);
+void br_stop(void);
 
 #ifdef	__cplusplus
 }

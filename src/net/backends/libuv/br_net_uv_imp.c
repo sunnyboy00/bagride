@@ -185,3 +185,7 @@ void br_http_register(br_http_server_t* servers_, int size_) {
 void br_run(void) {
     uv_run(uv_default_loop(), UV_RUN_DEFAULT);
 }
+
+void br_stop(void) {
+    uv_stop(uv_default_loop());
+}
