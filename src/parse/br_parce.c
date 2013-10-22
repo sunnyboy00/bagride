@@ -4,15 +4,15 @@
 
 int br_line_prepare(const char* _start, size_t _n, char _sep, br_line_t* _io)
 {
-    memset(_io, 0, sizeof (*_io));
-    _io->sep = _sep;
-    _io->start = _start;
-    _io->p = _start;
-    _io->end = _start + _n;
-    return 0;
+	memset(_io, 0, sizeof (*_io));
+	_io->sep = _sep;
+	_io->start = _start;
+	_io->p = _start;
+	_io->end = _start + _n;
+	return 0;
 }
 
-br_substring_t* br_line_next_sub(br_line_t* _io)
+br_substring_t* br_line_next_substring(br_line_t* _io)
 {
 	while (_io->p <= _io->end)
 	{
@@ -28,10 +28,10 @@ br_substring_t* br_line_next_sub(br_line_t* _io)
 			{
 				_io->sub.n = 0;
 			}
-				++_io->p;
+			++_io->p;
 			_io->sub_start = NULL;
 			return &_io->sub;
-			}
+		}
 		else
 		{ /* no sep */
 			if (NULL == _io->sub_start)
@@ -40,6 +40,6 @@ br_substring_t* br_line_next_sub(br_line_t* _io)
 			}
 		}
 		++_io->p;
-		}
+	}
 	return NULL;
 }

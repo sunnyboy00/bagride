@@ -25,7 +25,7 @@ extern "C" {
 
     int br_line_prepare(const char* _start, size_t _n, char _sep, br_line_t* _io);
 
-    br_substring_t* br_line_next_sub(br_line_t* _io);
+    br_substring_t* br_line_next_substring(br_line_t* _io);
     
     
 #ifdef __cplusplus
