@@ -6,17 +6,17 @@
 #include <string.h>
 
 #include "br_net.h"
-#include "br_trace.h"
+#include "tt.h"
 
 static int on_udp_parse(ssize_t nread_, const uv_buf_t* inbuf_, br_udp_server_t* pserver_) {
-    R_INFO("udp (%d)[%d] %s data (%p)", pserver_->m_port, (int) nread_,
+    TT_INFO("udp (%d)[%d] %s data (%p)", pserver_->m_port, (int) nread_,
             inbuf_->base,
             pserver_->m_data);
     return 0;
 }
 
 static int on_tcp_parse(ssize_t nread_, const uv_buf_t* inbuf_, br_tcp_server_t* pserver_) {
-    R_INFO("tcp (%d)[%d] %s data (%p)", pserver_->m_port, (int) nread_, inbuf_->base,
+    TT_INFO("tcp (%d)[%d] %s data (%p)", pserver_->m_port, (int) nread_, inbuf_->base,
             pserver_->m_data);
     asprintf(&pserver_->m_write_buffer.base, "<<%s>>", inbuf_->base);
     pserver_->m_write_buffer.len = strlen(pserver_->m_write_buffer.base);

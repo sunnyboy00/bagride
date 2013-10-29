@@ -34,6 +34,10 @@ file(MAKE_DIRECTORY ${BR_DIST_DIR})
 set(EXECUTABLE_OUTPUT_PATH ${BR_DIST_DIR})
 set(LIBRARY_OUTPUT_PATH ${BR_DIST_DIR})
 
+include(MacroUseTt)
+macro_use_tt()
+
+
 include(MacroUseUv)
 macro_use_uv()
 
@@ -42,14 +46,12 @@ macro_use_httpparser()
 
 #lib name definition
 set( BR_TRACE_LIB br_trace)
-set( BR_PARSE_LIB br_parse)
 set( BR_NET_UV_LIB br_net_uv)
 
 #debug release namming context
 if (CMAKE_BUILD_TYPE MATCHES Debug)
   set(BR_TRACE_LIB "${BR_TRACE_LIB}_d")
   set(BR_NET_UV_LIB "${BR_NET_UV_LIB}_d")
-  set(BR_PARSE_LIB "${BR_PARSE_LIB}_d")
 endif (CMAKE_BUILD_TYPE MATCHES Debug)
 
 
