@@ -1,4 +1,5 @@
 /bin/
+Makefile
 http-parser.dir
 CMakeCache.txt
 *.log
