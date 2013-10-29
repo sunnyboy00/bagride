@@ -12,7 +12,7 @@ project (br)
 #==============================================================================
 # Additional package ressource finders
 #==============================================================================
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/ressources/CMake/Modules")
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/resources/CMake/Modules")
 
 #==============================================================================
 # The macro below forces the build directory to be different from source directory
