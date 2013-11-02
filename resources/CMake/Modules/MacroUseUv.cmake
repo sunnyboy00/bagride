@@ -3,7 +3,11 @@ MACRO(macro_use_uv)
 
 set( CURRENT_UV_DIR ${PROJECT_SOURCE_DIR}/external_libs/libuv )
 
-set (UV_A ${CURRENT_UV_DIR}/.libs/libuv.a)
+if(WIN32)
+  set (UV_A ${CURRENT_UV_DIR}/libuv.a)
+else(WIN32)
+  set (UV_A ${CURRENT_UV_DIR}/.libs/libuv.a)
+endif(WIN32)
 
 include_directories (${CURRENT_UV_DIR}/include)
 

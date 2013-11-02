@@ -28,10 +28,18 @@ f_cmake_arbo()
 f_cmake_configure()
 {
   cd ${CMAKE_W_ROOT}/${RELEASE_DIR}
-  cmake  -DCMAKE_BUILD_TYPE=Release ${PROJECT_DIR}
+  if [ ${BUILD_TYPE}X==win32X ]; then    
+	cmake -G "MSYS Makefiles" -DCMAKE_BUILD_TYPE=Release ${PROJECT_DIR}
+  else
+    cmake  -DCMAKE_BUILD_TYPE=Release ${PROJECT_DIR} 
+  fi
 
   cd ${CMAKE_W_ROOT}/${DEBUG_DIR}
-  cmake  -DCMAKE_BUILD_TYPE=Debug ${PROJECT_DIR}
+  if [ ${BUILD_TYPE}X==win32X ]; then    
+	cmake -G "MSYS Makefiles" -DCMAKE_BUILD_TYPE=Debug ${PROJECT_DIR}
+  else
+    cmake  -DCMAKE_BUILD_TYPE=Debug ${PROJECT_DIR} 
+  fi
 }
 # ----------------------------------------------------------------------- #
 #                                                                         #
@@ -79,6 +87,14 @@ EOF
 
 
 PROJECT_DIR=$(pwd)
+
+if [ $1 ]; then
+  if [ ${1}X==winX ]; then
+     echo "build for windows mingw"
+	 BUILD_TYPE=WIN32
+  fi
+
+fi
 
 f_cmake_arbo
 f_cmake_configure

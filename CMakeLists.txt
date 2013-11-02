@@ -34,8 +34,15 @@ file(MAKE_DIRECTORY ${BR_DIST_DIR})
 set(EXECUTABLE_OUTPUT_PATH ${BR_DIST_DIR})
 set(LIBRARY_OUTPUT_PATH ${BR_DIST_DIR})
 
-include(MacroUseTt)
-macro_use_tt()
+include(MacroUseMmTrace)
+macro_use_mmtrace()
+
+if(WIN32)
+  include(MacroUseMmwincompat)
+  macro_use_mmwincompat()
+  include(MacroUseMingw)
+  macro_use_mingw()
+endif(WIN32)
 
 include(MacroUseUv)
 macro_use_uv()
