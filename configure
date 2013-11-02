@@ -48,10 +48,17 @@ f_top_makefile()
 {
   GMAKEFILE=${PROJECT_DIR}/Makefile
 
+  if [ ${BUILD_TYPE}X==win32X ]; then    
+    BUILD_IT_OPT=win	
+  else
+    BUILD_IT_OPT=linux
+  fi
+
   echo "GENDATE=$(f_date)" > ${GMAKEFILE}
   echo "PROJECT_NAME=bagride" >> ${GMAKEFILE}
   echo "DEBUG_DIR=${CMAKE_W_ROOT}/${DEBUG_DIR}" >> ${GMAKEFILE}
   echo "RELEASE_DIR=${CMAKE_W_ROOT}/${RELEASE_DIR}" >> ${GMAKEFILE}
+  echo "BUILD_IT_OPT=${BUILD_IT_OPT}" >> ${GMAKEFILE}
     
   cat >> ${GMAKEFILE} << "EOF"
 
@@ -79,8 +86,8 @@ archive:
 	
 .PHONY: external_libs
 external_libs:
-	cd external_libs/libhttp-parser && ./buildit
-	cd external_libs/libuv && ./buildit
+	cd external_libs/libhttp-parser && ./buildit $(BUILD_IT_OPT)
+	cd external_libs/libuv && ./buildit $(BUILD_IT_OPT)
 EOF
 
 }
