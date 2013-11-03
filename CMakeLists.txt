@@ -34,7 +34,7 @@ file(MAKE_DIRECTORY ${BR_DIST_DIR})
 set(EXECUTABLE_OUTPUT_PATH ${BR_DIST_DIR})
 set(LIBRARY_OUTPUT_PATH ${BR_DIST_DIR})
 
-include(MacroUseMmTrace)
+include(MacroUseMmtrace)
 macro_use_mmtrace()
 
 if(WIN32)

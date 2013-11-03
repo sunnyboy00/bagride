@@ -15,10 +15,12 @@ if(WIN32)
   target_link_libraries (${BR_NET_SAMPLE} ${LIBWS2_32_A} )
   target_link_libraries (${BR_NET_SAMPLE} ${LIBPSAPI_A} )
   target_link_libraries (${BR_NET_SAMPLE} ${LIBIPHLPAPI_A} )
+else(WIN32)
+  target_link_libraries (${BR_NET_SAMPLE} -lpthread -lrt)
 endif(WIN32)
 
   
-#target_link_libraries (${BR_NET_SAMPLE} -lpthread -lrt)
+
 
 
 #add_subdirectory(boostrap)
